@@ -1,28 +1,10 @@
 // JavaScript file!
 //case for castle crashers tool
 function castlecrash(){
-var character = document.getElementById('in').value;
+var k = document.getElementById('in').value;
 var title = document.getElementById('char');
 var info = document.getElementById('info');
 
-var characters = {
-  'char': {
-    title: 'Select a character!',
-    info: ''
-  },
-  'red': {
-    title: 'Red Knight',
-    info: ''
-  }
-};
-// DRYing it up
-// Dont
-// Repeat
-// Yourself
-title.innerHTML = characters[character].title;
-info.innerHTML = characters[character].info;
-
-/** /
 switch(k) {
   case 'char':
   title.innerHTML = "Select a character!";
@@ -154,4 +136,3 @@ switch(k) {
   break;
  }
 }
-/**/

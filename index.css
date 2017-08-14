@@ -11,7 +11,7 @@
 }
 .bod {
   margin: auto;
-  border: 3px solid black;
+  border: 3px solid black; 
   width: 50%;
   padding: 15px;
   background-color: aqua;
@@ -20,15 +20,15 @@
   box-shadow: 0px 9px 10px 6px rgba(0,0,0,0.39);
 }
 .biotitle{
-  margin: auto;
   width: 30%;
-  text-align: inherit;
+ text-align: center;
   font-size: 160%;
   background-color: white;
   border: 3px solid black;
   box-shadow: -1px 8px 20px 2px rgba(0,0,0,0.39);
 }
 .bio {
+
   margin: auto;
   border: 3px solid black;
   width: 80%;
@@ -113,7 +113,7 @@ a.navt:visited {
   overflow: auto;
 }
 .castlepic {
-  display: inline-block;
+  display: inline;
   float: left;
   width: auto;
   height: auto;
@@ -123,5 +123,5 @@ a.navt:visited {
   color:black;
   font-size:140%;
   font-family: "Comic Sans MS";
-  text-align:justify;
+  text-align:center;
 }
