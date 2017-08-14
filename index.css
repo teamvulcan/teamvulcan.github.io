@@ -7,11 +7,11 @@
   text-align: center;
   background-color: white;
   color: black;
-  font-family: "Comic Sans MS";
+  font-family: "Tahoma";
 }
 .bod {
   margin: auto;
-  border: 3px solid black; 
+  border: 3px solid black;
   width: 50%;
   padding: 15px;
   background-color: aqua;
@@ -41,7 +41,7 @@
 .text {
   color:black;
   font-size:150%;
-  font-family: "Comic Sans MS";
+  font-family: "Tahoma";
 }
 .nav {
   margin: auto;
@@ -66,7 +66,7 @@
   text-align: center;
   background-color: white;
   color: black;
-  font-family: "Comic Sans MS";
+  font-family: "Tahoma";
 }
 .headerbutton:hover{
   background-color:#d7d8d6;
@@ -89,7 +89,7 @@ a.aye:link {
   background-color: #d7d8d6;
 }
 .navt {
-  font-family: "Comic Sans MS";
+  font-family: "Tahoma";
   font-size: 120%;
   color: black;
 }
@@ -102,7 +102,7 @@ a.navt:visited {
   text-decoration: none;
 }
 .list{
-  width: 25%; margin-left: auto; margin-right: auto; font-family: "Comic Sans MS"; font-size:150%; color:black;
+  width: 25%; margin-left: auto; margin-right: auto; font-family: "Tahoma"; font-size:150%; color:black;
 }
 .proofpic{
   width: auto;
@@ -122,6 +122,6 @@ a.navt:visited {
 .biotext {
   color:black;
   font-size:140%;
-  font-family: "Comic Sans MS";
+  font-family: "Tahoma";
   text-align:center;
 }
