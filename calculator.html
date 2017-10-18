@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Max Holzmann | Contact</title>
+  <title>Max Holzmann | Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="castle.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="calc.js"></script>
 
   <style>
   .h2 {
@@ -19,13 +19,13 @@
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Max Holzmann </a>
+      <a class="navbar-brand" href="index.html">Max Holzmann</a>
     </div>
     <ul class="nav navbar-nav">
-     <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="index.html">Home</a></li>
       <li><a href="biography.html">Bio</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li class="active"><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Social Media
         <span class="caret"></span></a>
@@ -33,7 +33,7 @@
           <li><a href="http://www.instagram.com/max._holzmann">Instagram</a></li>
           <li><a href="https://twitter.com/MaxTheHLEEP">Twitter</a></li>
           <li><a href="https://www.youtube.com/channel/UCxXArX2MdC4KBJAdccLrZpg?view_as=subscriber?&ab_channel=HLEEP">YouTube</a></li>
-          <li><a href="http://www.twitch.tv/hleep">Twitch</a></li>c
+          <li><a href="http://www.twitch.tv/hleep">Twitch</a></li>
         </ul>
       </li>
     </ul>
@@ -56,34 +56,30 @@
   </div>
 </div>
 
-<div class=jumbotron>
-  <h2 class=h2>Castle Crashers Character Tool</h2>
-  <h3>Find information on all playable Castle Crasher characters!</h3>
-</div>
+  <div class="jumbotron">
+  <h2 class="h2">Calculator Program</h2>
 
-<div class="jumbotron">
+    <p class="lead">
 
-<form id="knight">
-<select id="charinput" onchange="red.update();">
-<option value="choose" id="choose">Choose your character!</option>
-<option  value="red" id="red">Red Knight</option>
+  <input id="first" type="number" value=0></input>
+
+ <select id="op">
+ <option id="plus" value="plus">+</option>
+ <option id="minus" value="minus">-</option>
+ <option id="multiply" value="multiply">*</option>
+ <option id="divide" value="divide">/</option>
 </select>
-</form>
 
+<input id="second" type="number" value=0></input>
+<input onclick="calculate();" type="submit"></input>
+    </p>
+<p class=lead id="ans"></p>
 
-
-<p id="charpic"></p>
-<p id="chartitle"></p>
-<p id="charinfo"> </p>
-
-
-
-
-
+  </div>
 </div>
-
-
+</div>
 
 
 </body>
+
 </html>
