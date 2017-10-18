@@ -1,10 +1,24 @@
 function calculate() {
-  var one = document.getElementById('first').value;
-  var two = document.getElementById('second').value;
+  var one =  Number(document.getElementById('first').value);
+  var two = Number(document.getElementById('second').value);
   var operator = document.getElementById('op').value;
   var answer = document.getElementById('ans');
-  var final = one + two;
 
-    ans.textContent = final;
-
+  switch(operator) {
+  case '+':
+  final = one + two;
+  answer.textContent = one + " + " + two + " = " + final;
+  break;
+  case '-':
+  final = one - two;
+  answer.textContent = one + " - " + two + " = " + final;
+  break;
+  case '*':
+  final = one * two;
+  answer.textContent = one + " x " + two + " = " + final;
+  break;
+  case '/':
+  final = one / two;
+  answer.textContent = one + " / " + two + " = " + final;
+  }
 }
