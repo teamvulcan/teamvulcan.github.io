@@ -25,7 +25,8 @@ var castlethumb = document.getElementById('castlethumb');
 title.textContent = first(charvalue); //sets title to the name of the picked character
 switch(charvalue) { //sorts between character values
   case 'choose':
-  castlethumb.className += "hiding";
+  title.textContent = "";
+  charpic.src = "";
   break;
   case 'red':
   charpic.src='images/castle/red.png';
