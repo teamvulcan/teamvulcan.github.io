@@ -23,12 +23,14 @@ var charpic = document.getElementById('charpic');
 var title = document.getElementById('chartitle');
 var castlethumb = document.getElementById('castlethumb');
 title.textContent = first(charvalue); //sets title to the name of the picked character
+castlethumb.style.display = "initial";
 switch(charvalue) { //sorts between character values
   case 'choose':
   title.textContent = "";
+  castlethumb.style.display = "none";
   charpic.src = "";
   break;
-  case 'red':
+  case 'Red Knight':
   charpic.src='images/castle/red.png';
   break;
 }
