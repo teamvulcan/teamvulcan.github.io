@@ -3,7 +3,8 @@ function calculate() {
   var two = Number(document.getElementById('second').value);
   var operator = document.getElementById('op').value;
   var answer = document.getElementById('ans');
-
+  var final; 
+  
   switch(operator) {
   case '+':
   final = one + two;
