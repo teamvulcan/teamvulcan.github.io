@@ -8,14 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="castle.js"></script>
-  <link rel="stylesheet" href="css/style.css" type=text/css>
+  <link rel="stylesheet" href="style.css" type=text/css>
  <link rel="icon" href="images/favicon.png">
 
-  <style>
-  .h2 {
-    font-size:300%;
-  }
-  </style>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -72,19 +67,19 @@
 </select>
 </form>
 
-
+<br>
 
 <div id="castlethumb" style="display: none" class="col-md-12">
   <div class="col-md-3">
-    <a class="thumbnail">
+    <div class="thumbnail">
       <img class='castlepic' id=charpic src="">
-    </a>
     </div>
-<br>
+    </div>
+
 <div class="col-md-6">
-  <p id="chartitle"></p>
-  
-  <p id="charinfo"> </p>
+  <p style='font-size: 250%' id="chartitle"></p>
+
+  <p class="lead" id="charinfo"> </p>
 </div>
 
 </div>
@@ -98,4 +93,3 @@
 
 </body>
 </html>
-
