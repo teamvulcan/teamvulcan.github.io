@@ -13,6 +13,7 @@ var green = new castleChar("Description", "Thin Sword", "Poison", "Default", "D"
 var blue = new castleChar("Description", "Sheathed Sword", "Ice", "Default", "S");
 var orange = new castleChar("Description", "Broad Ax", "Fire", "Default", "B");
 var gray = new castleChar("Description", "Skinny Sword", "Non-Elemental (Fire)", "Unlock the barbarian boss", "");
+var opengray = new castleChar("Description", "Skinny Sword", "Non-Elemental", "");
 
 
 // function to update the html page
