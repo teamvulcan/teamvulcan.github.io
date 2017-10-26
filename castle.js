@@ -12,6 +12,7 @@ var red = new castleChar("Description", "Mace", "Electricity", "Default", "B");
 var green = new castleChar("Description", "Thin Sword", "Poison", "Default", "D");
 var blue = new castleChar("Description", "Sheathed Sword", "Ice", "Default", "S");
 var orange = new castleChar("Description", "Broad Ax", "Fire", "Default", "B");
+var gray = new castleChar("Description", "Skinny Sword", "Non-Elemental (Fire)", "Unlock the barbarian boss", "");
 
 
 // function to update the html page
@@ -60,6 +61,12 @@ switch(charvalue) { //sorts between character values and sets the coressponding 
   castleweapon.textContent = weaponprefix + orange.startweapon;
   castlemagic.textContent = magicprefix + orange.magic;
   castleunlock.textContent = unlockprefix + orange.unlock; 
+  break;
+  case 'Gray Knight':
+  charpic.src = "images/castle/gray.png";
+  castleweapon.textContent = weaponprefix + gray.startweapon;
+  castlemagic.textContent = magicprefix + gray.magic;
+  castleunlock.textContent = unlockprefix + gray.unlock;
   break;
 }
 title.scrollIntoView(true);
