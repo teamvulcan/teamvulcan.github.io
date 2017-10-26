@@ -1,54 +1,66 @@
-// object function for character's info
-function castleChar(name, desc, img, startweapon, magic, unlock){
-  this.name = name;
+// object function for each character's info
+function castleChar(desc, startweapon, magic, unlock, wikitier){
   this.desc = desc;
-  this.img = img;
   this.startweapon = startweapon;
   this.magic = magic;
   this.unlock = unlock;
-}
-
-//function to uppercase the first letter of a string
-function first(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+  this.wikitier = wikitier;
 }
 
 //variables for each character
-var red = new castleChar("Red Knight", "Description", "image", "Mace", "Electricity", "Default");
-var green = new castleChar("Green Knight", "Description", "image", "Thin Sword", "Poison", "Default");
+var red = new castleChar("Description", "Mace", "Electricity", "Default", "B");
+var green = new castleChar("Description", "Thin Sword", "Poison", "Default", "D");
+var blue = new castleChar("Description", "Sheathed Sword", "Ice", "Default", "S");
+var orange = new castleChar("Description", "Broad Ax", "Fire", "Default", "B");
+
 
 // function to update the html page
 function update() {
-var charput = document.getElementById('castleinput');
+// DOM variables regarding input & title / picture.
 var charvalue = document.getElementById('castleinput').value;
 var charpic = document.getElementById('charpic');
 var title = document.getElementById('chartitle');
 var castlethumb = document.getElementById('castlethumb');
+
+//DOM variables regarding character information 
 var castleweapon = document.getElementById('startweapon');
 var castlemagic = document.getElementById('magic');
 var castleunlock = document.getElementById('unlock');
-title.textContent = first(charvalue); //sets title to the name of the picked character
+
+//variables for common prefixs
+var weaponprefix = "Starting Weapon: ";
+var unlockprefix = "Unlock: ";
+var magicprefix = "Magic: ";
+
+title.textContent = charvalue; //sets title to the name of the picked character
+
 castlethumb.style.display = "initial";
-switch(charvalue) { //sorts between character values
-  case 'choose':
-  title.textContent = "";
-  castlethumb.style.display = "none";
-  charpic.src = "";
-  break;
+
+switch(charvalue) { //sorts between character values and sets the coressponding info
   case 'Red Knight':
   charpic.src='images/castle/red.png';
-  castleweapon.textContent = red.startweapon;
-  castlemagic.textContent = red.magic;
-  castleunlock.textContent = red.unlock;
+  castleweapon.textContent = weaponprefix + red.startweapon;
+  castlemagic.textContent = magicprefix + red.magic;
+  castleunlock.textContent = unlockprefix + red.unlock;
   break;
   case 'Green Knight':
   charpic.src= 'images/castle/green.png';
-  castleweapon.textContent = green.startweapon;
-  castlemagic.textContent = green.magic;
-  castleunlock.textContent = green.unlock;
+  castleweapon.textContent = weaponprefix + green.startweapon;
+  castlemagic.textContent = magicprefix + green.magic;
+  castleunlock.textContent = unlockprefix + green.unlock;
+  break;
+  case 'Blue Knight':
+  charpic.src = "images/castle/blue.png";
+  castleweapon.textContent = weaponprefix + blue.startweapon;
+  castlemagic.textContent = magicprefix + blue.magic;
+  castleunlock.textContent = unlockprefix + blue.unlock;
+  break;
+  case 'Orange Knight':
+  charpic.src = "images/castle/orange.png";
+  castleweapon.textContent = weaponprefix + orange.startweapon;
+  castlemagic.textContent = magicprefix + orange.magic;
+  castleunlock.textContent = unlockprefix + orange.unlock; 
   break;
 }
-
-
-
+title.scrollIntoView(true);
 }
