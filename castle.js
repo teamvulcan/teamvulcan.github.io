@@ -18,8 +18,8 @@ var blacksmith = new castleChar("Description", "Hammer", "Non-Elemental (Fire)",
 var pink = new castleChar("Description", "NG Lollipop", "Love", "DLC (Regular), At start of game (Remastered)", "A");
 var alien = new castleChar("Description", "Alien Gun", "Non-Elemental (Fire)", "Beat level 1-1 in Alien Hominid HD (360), Complete Alien Ship", "E");
 var barbarian = new castleChar("Description", "Barbarian Ax", "Non-Elemental", "Beat the King's Arena", "C");
-var bear = new castleChar();
-var brute = new castleChar();
+var bear = new castleChar("Description", "Club", "Wind", "Beat the game with Skeleton", "B");
+var brute = new castleChar("Description", "Dual Prong Sword", "Nature", "Beat the game with Iceskimo", "A");
 var civilian = new castleChar();
 var conehead = new castleChar();
 var cultminion = new castleChar();
@@ -129,6 +129,28 @@ switch(charvalue) { //sorts between character values and sets the coressponding 
   castlemagic.textContent = magicprefix + alien.magic;
   castleunlock.textContent = unlockprefix + alien.unlock;
   break;
+  case 'Barbarian':
+  charpic.src="images/castle/barbarian.png";
+  castlewikitier.textContent = wikitierprefix + barbarian.wikitier;
+  castleweapon.textContent = weaponprefix + barbarian.startweapon;
+  castlemagic.textContent = magicprefix + barbarian.magic;
+  castleunlock.textContent = unlockprefix + barbarian.unlock; 
+  break;
+  case 'Bear':
+  charpic.src="images/castle/bear.png";
+  castlewikitier.textContent = wikitierprefix + bear.wikitier;
+  castleweapon.textContent = weaponprefix + bear.startweapon;
+  castlemagic.textContent = magicprefix + bear.magic;
+  castleunlock.textContent = unlockprefix + bear.unlock;
+  break;
+  case 'Brute':
+  charpic.src="images/castle/brute.png";
+  castlewikitier.textContent = wikitierprefix + brute.wikitier;
+  castleweapon.textContent = weaponprefix + brute.startweapon;
+  castlemagic.textContent = magicprefix + brute.magic;
+  castleunlock.textContent = unlockprefix + brute.unlock;
+  break;
+  
   
 }
 title.scrollIntoView(true);
