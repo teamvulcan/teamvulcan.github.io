@@ -17,6 +17,28 @@ var opengray = new castleChar("Description", "Skinny Sword", "Non-Elemental", "D
 var blacksmith = new castleChar("Description", "Hammer", "Non-Elemental (Fire)", "DLC (Regular), At start of game (Remastered)", "E");
 var pink = new castleChar("Description", "NG Lollipop", "Love", "DLC (Regular), At start of game (Remastered)", "A");
 var alien = new castleChar("Description", "Alien Gun", "Non-Elemental (Fire)", "Beat level 1-1 in Alien Hominid HD (360), Complete Alien Ship", "E");
+var barbarian = new castleChar("Description", "Barbarian Ax", "Non-Elemental", "Beat the King's Arena", "C");
+var bear = new castleChar();
+var brute = new castleChar();
+var civilian = new castleChar();
+var conehead = new castleChar();
+var cultminion = new castleChar();
+var fencer = new castleChar();
+var firedemon = new castleChar();
+var hatty = new castleChar();
+var iceskimo = new castleChar();
+var industrialist = new castleChar();
+var beekeeper = new castleChar();
+var king = new castleChar();
+var necromancer = new castleChar();
+var ninja = new castleChar();
+var peasant = new castleChar();
+var royalguard = new castleChar();
+var saracen = new castleChar();
+var skeleton = new castleChar();
+var snakey = new castleChar();
+var stoveface = new castleChar();
+var thief = new castleChar();
 
 
 // function to update the html page
@@ -100,6 +122,14 @@ switch(charvalue) { //sorts between character values and sets the coressponding 
   castlemagic.textContent = magicprefix + pink.magic;
   castleunlock.textContent = unlockprefix + pink.unlock;
   break;
+  case 'Alien':
+  charpic.src = "images/castle/alien.png";
+  castlewikitier.textContent = wikitierprefix + alien.wikitier;
+  castleweapon.textContent = weaponprefix + alien.startweapon;
+  castlemagic.textContent = magicprefix + alien.magic;
+  castleunlock.textContent = unlockprefix + alien.unlock;
+  break;
+  
 }
 title.scrollIntoView(true);
 }
