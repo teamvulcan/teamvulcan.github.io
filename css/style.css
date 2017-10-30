@@ -1,22 +1,9 @@
-.logoimage {
-  width: 100%;
-  height: 40%;
-}
-.csimage {
- width: 200%;
- height: 200%;
-}
 .cslogoimage {
   width: 40%;
   height: 40%;
 }
-.newcsimage {
-max-width: 170%;
-height: auto;
-display: block;
-}
-.myper{
-  max-width: 100%;
+.logoimage{
+  max-width: 80%;
   height: auto;
   display:block;
 }
