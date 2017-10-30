@@ -1,4 +1,12 @@
 .logoimage {
+  width: 100%;
+  height: 40%;
+}
+.csimage {
+ width: 200%;
+ height: 200%;
+}
+.cslogoimage {
   width: 40%;
-  length: 40%;
+  height: 40%;
 }
