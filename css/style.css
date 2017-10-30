@@ -11,9 +11,12 @@
   height: 40%;
 }
 .newcsimage {
-max-width: 200%;
-max-height: 200%;
+max-width: 170%;
 height: auto;
-width: auto;
 display: block;
+}
+.myper{
+  max-width: 100%;
+  height: auto;
+  display:block;
 }
